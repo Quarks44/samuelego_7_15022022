@@ -17,14 +17,20 @@ source (chemin vers le fichier groupomania.sql);
 
 
 BACK END
+
 Ouvrir un terminal dans le dossier backend :
+
 npm install
+
 node server
 
 
 FRONT END
+
 Ouvrir un autre terminal dans le dossier frontend :
+
 npm install
+
 npm run serve
 
 
