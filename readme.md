@@ -7,8 +7,11 @@ DB_PASS=
 
 Ouvrir MySql command Line client :
 CREATE DATABASE groupomania;
+
 USE groupomania;
+
 Importer le fichier groupomania.sql (qui ce trouve a la racine du projet) :
+
 source (chemin vers le fichier groupomania.sql);
 
 
