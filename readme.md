@@ -6,6 +6,7 @@ DB_USER=root
 DB_PASS=
 
 Ouvrir MySql command Line client :
+
 CREATE DATABASE groupomania;
 
 USE groupomania;
