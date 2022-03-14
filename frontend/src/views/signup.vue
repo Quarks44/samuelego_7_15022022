@@ -23,8 +23,8 @@
           Login
         </h2>
         <form v-on:submit.prevent="login">
-        <label for="nom"> </label>
           <input
+            aria-label="nom"
             v-if="mode == 'signup'"
             type="text"
             id="nom"
@@ -34,8 +34,9 @@
           />
           <p v-if="errorNom && mode == 'signup'" class="red">
             Ton nom doit contenir au moins 3 caractères
-          </p><label for="prenom"></label>
+          </p>
           <input
+            aria-label="prenom"
             v-if="mode == 'signup'"
             type="text"
             id="prenom"
@@ -45,8 +46,9 @@
           />
           <p v-if="errorPrenom && mode == 'signup'" class="red">
             Ton prénom doit contenir au moins 3 caractères
-          </p><label for="email"></label>
+          </p>
           <input
+            aria-label="email"
             v-if="mode == 'signup'"
             type="text"
             id="email"
@@ -59,8 +61,9 @@
           </p>
           <p v-if="sameEmail && mode == 'signup'" class="red">
             Cet Email est déja utilisé.
-          </p><label for="password"></label>
+          </p>
           <input
+            aria-label="password"
             v-if="mode == 'signup'"
             type="password"
             id="password"
@@ -181,18 +184,18 @@ h2 {
 }
 
 h2.inactive {
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 
 h2.active {
   color: #0d0d0d;
-  border-bottom: 2px solid #f27041 ;
+  border-bottom: 2px solid #f27041;
 }
 
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -253,7 +256,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #f27041 ;
+  border-bottom: 2px solid #f27041;
 }
 
 input[type="text"]:placeholder {
@@ -272,12 +275,9 @@ input[type="text"]:placeholder {
   }
 }
 
-
-
 .incorrect {
   animation: incorrect ease-in 1;
 }
-
 </style>
 
 <script>
